@@ -1,0 +1,82 @@
+{
+  "options": {
+    "paths": {
+      "root": "",
+      "fonts": "fonts",
+      "sprites": "sprites",
+      "styles": "styles",
+      "mbtiles": ""
+    },
+    "domains": [
+      "localhost:8080",
+      "127.0.0.1:8080"
+    ],
+    "formatQuality": {
+      "jpeg": 80,
+      "webp": 90
+    },
+    "maxScaleFactor": 3,
+    "maxSize": 2048,
+    "pbfAlias": "pbf",
+    "serveAllFonts": false,
+    "serveAllStyles": false,
+    "serveStaticMaps": true,
+    "tileMargin": 0
+  },
+  "styles": {
+    "basic": {
+      "style": "basic.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [
+          8.44806,
+          47.32023,
+          8.62537,
+          47.43468
+        ]
+      }
+    },
+    "light": {
+      "style": "light/light.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [
+          8.44806,
+          47.32023,
+          8.62537,
+          47.43468
+        ]
+      }
+    },
+    "dark": {
+      "style": "dark/dark.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [
+          8.44806,
+          47.32023,
+          8.62537,
+          47.43468
+        ]
+      }
+    },
+    "hybrid": {
+      "style": "satellite-hybrid.json",
+      "serve_rendered": false,
+      "tilejson": {
+        "format": "webp"
+      }
+    }
+  },
+  "sources": {
+    "openmaptiles": {
+      "url": "mbtiles://tiles_planet.mbtiles",
+      "type": "vector"
+    }
+  },
+  "data": {
+    "planet": {
+      "mbtiles": "tiles_planet.mbtiles"
+    }
+  }
+}
